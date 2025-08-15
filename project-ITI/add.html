@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Add a recipe</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="header"> 
+            <h1>Hi, Master Chef</h1>
+            <h2>Unleash Your Inner Chef, Share Your Signature Recipe!</h2>
+        </div>
+        <form>
+            <br><br>
+            <label for="name">Your recipe name</label>
+            <br><br>
+            <input id="name" type="text" name="recipe name" required autofocus placeholder="please tell me the name of your recipe" >
+            <br><br>
+            <label for="desciption">desciption:</label>
+            <br><br>
+            <textarea name="desciption" id="desciption" rows="5" cols="20" placeholder="Write a description of the recipe" required></textarea>
+            <br><br>
+            <label for="mealsection">Meal section:</label>
+            <br><br>
+            <select id="mealsection" name="meal section">
+                <option value="Breakfast">Breakfast</option>
+                <option value="Lunch">Lunch</option>
+                <option value="Dinner">Dinner</option>
+            </select>
+            <br><br>
+            <label for="mealType">Meal type:</label>
+            <br><br>
+            <select id="mealType" name="meal Type">
+                <option value="easy">Easy</option>
+                <option value="meduim">Meduim</option>
+                <option value="hard">Hard</option>
+            </select>
+            <br><br>
+            <label for="ingr">Ingredients:</label>
+            <br><br>
+            <textarea name="Ingredients" id="ingr" rows="10" cols="20" placeholder="Write down everything you need to prepare the magic recipe!" required></textarea>
+            <br><br>
+            <label for="desciption">How to make it:</label>
+            <br><br>
+            <textarea name="description" id="desciption" rows="20" cols="30" placeholder="Step-by-step — how’s it done?" required></textarea>
+            <br><br>
+            <label for="made">Made by:</label>
+            <br><br>
+            <input type="text" id="made" placeholder="Write your name, Mr. Chef" required >
+            <br><br>
+            <button type="submit">Submit</button>
+            <br><br>
+        </form>
+        <script src="add.js"></script>
+    </body>
+</html>
